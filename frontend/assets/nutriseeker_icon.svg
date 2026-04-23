@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="74" y1="64" x2="430" y2="446" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FBF5"/>
+      <stop offset="1" stop-color="#E7F3E1"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="125" y1="104" x2="366" y2="371" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#74D86B"/>
+      <stop offset="1" stop-color="#2E7D32"/>
+    </linearGradient>
+    <linearGradient id="leafSoft" x1="234" y1="101" x2="395" y2="293" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B9E58B"/>
+      <stop offset="1" stop-color="#57A84A"/>
+    </linearGradient>
+    <filter id="shadow" x="70" y="62" width="372" height="388" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="18"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.180392 0 0 0 0 0.490196 0 0 0 0 0.196078 0 0 0 0.18 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_4"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_4" result="shape"/>
+    </filter>
+  </defs>
+  <rect x="32" y="32" width="448" height="448" rx="116" fill="url(#bg)"/>
+  <g filter="url(#shadow)">
+    <path d="M240.92 128.06C176 165.43 133 232.2 133 296.8C133 358.14 177.07 403 241.27 403C267.77 403 295.7 393.3 320.2 375.25C338.72 361.48 353.96 341.39 362.32 317.43C329.88 332.31 301.49 338.24 278.56 338.24C231.19 338.24 198.54 303.66 198.54 257.67C198.54 209.96 217.2 167.65 240.92 128.06Z" fill="url(#leaf)"/>
+    <path d="M332.05 115C323.8 205.6 279.77 264.69 209.83 303.98C229.26 332.05 261.96 349.55 300.36 349.55C362.74 349.55 411 298.42 411 230.43C411 183.83 382.15 142.65 332.05 115Z" fill="url(#leafSoft)"/>
+    <path d="M169 289.5C200.84 327.87 232.24 346.8 263.2 346.8C292.04 346.8 322.24 331.68 353.8 301.45C334.25 351.72 291.96 386 241.5 386C193.42 386 155.41 347.03 151.41 295.21L169 289.5Z" fill="#2E7D32" fill-opacity=".12"/>
+    <circle cx="284.5" cy="155.5" r="27.5" fill="#F6B73C"/>
+  </g>
+</svg>
